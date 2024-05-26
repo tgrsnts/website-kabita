@@ -5,10 +5,10 @@ tailwind.config = {
                 'poppins': ['"Poppins"'],
             },
             colors: {
-                'first': '#6F4E37',
-                'second': '#A67B5B',
-                'primary': '#ECB176',
-                'secondary' : 'FED8B1'
+                'first': '#AF8260',
+                'second': '#E4C59E',
+                'primary': '#803D3B',
+                'secondary' : '#322C2B'
             }
         }
     },
