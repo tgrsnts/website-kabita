@@ -32,40 +32,43 @@
             </button>
         </div>
         <div id="navbar" class="block items-center justify-between h-16 lg:flex lg:items-center lg:w-auto hidden">
-            <div
+            <div id="buttonMenu"
                 class="bg-white hover:brightness-90 cursor-pointer h-full flex items-center pl-4">
                 <a href="#menu" class="text-red-600 mr-4 font-poppins">Menu</a>
             </div>
             <div
+                id="buttonKontak"
                 class="bg-white hover:brightness-90 cursor-pointer h-full flex items-center pl-4">
                 <a href="#kontak" class="text-red-600 mr-4 font-poppins">Kontak</a>
             </div>
-            <div
+            <div id="buttonLokasi"
                 class="bg-white hover:brightness-90 cursor-pointer h-full flex items-center pl-4">
                 <a href="#lokasi" class="text-red-600 mr-4 font-poppins">Lokasi</a>
             </div>
-            <div
+            <div id="buttonKritik"
                 class="bg-white hover:brightness-90 cursor-pointer h-full flex items-center pl-4">
-                <a href="kritik.html" class="text-red-600 mr-4 font-poppins">Kritik & Saran</a>
+                <a href="#kritik" class="text-red-600 mr-4 font-poppins">Kritik & Saran</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero -->
-    <div class="bg-cover bg-center h-screen relative" style="background-image: url('indonesian-food.jpg');">
-        <div class="absolute inset-0 bg-black opacity-50"></div>
-        <div class="absolute inset-0 flex flex-col justify-center items-center text-center">
-            <h1 class="text-white px-4 text-2xl lg:text-5xl font-poppins font-bold mb-2">WAROENG KABITA
-            </h1>
-            <h1 class="text-white px-4 text-lg lg:text-2xl font-poppins mb-6">Bukan anak IPB kalau belum
-                makan di Kabita
-            </h1>
-            <!-- <a href="#"
-                class="bg-red-500 hover:bg-white hover:border hover:border-red-500 text-white hover:text-red-500 font-poppins font-semibold py-3 px-8 rounded-full hover:bg-red-600 transition duration-300">Login
-                / Register
-            </a> -->
+    <section id="hero">
+        <div class="bg-cover bg-center h-screen relative" style="background-image: url('indonesian-food.jpg');">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="absolute inset-0 flex flex-col justify-center items-center text-center">
+                <h1 class="text-white px-4 text-2xl lg:text-5xl font-poppins font-bold mb-2">WAROENG KABITA
+                </h1>
+                <h1 class="text-white px-4 text-lg lg:text-2xl font-poppins mb-6">Bukan anak IPB kalau belum
+                    makan di Kabita
+                </h1>
+                <!-- <a href="#"
+                    class="bg-red-500 hover:bg-white hover:border hover:border-red-500 text-white hover:text-red-500 font-poppins font-semibold py-3 px-8 rounded-full hover:bg-red-600 transition duration-300">Login
+                    / Register
+                </a> -->
+            </div>
         </div>
-    </div>
+    </section>
 
     <!-- Know About Us -->
     <section class="py-20 bg-gray-100">
@@ -88,7 +91,7 @@
     </section>
 
     <!-- Best Seller -->
-    <section id="best-seller" class="pb-16 px-16 bg-gray-100">
+    <section id="best-seller" class="px-16 py-20 bg-gray-100">
         <div class="container mx-auto text-center">
             <h2 class="text-4xl text-center font-poppins font-bold mb-8">Best Seller</h2>
             <div class="slider flex flex-wrap justify-center gap-5">
@@ -157,7 +160,7 @@
     </section>
 
     <!-- Menu -->
-    <section id="menu" class="pb-16 px-8 bg-gray-100">
+    <section id="menu" class="px-16 py-20 bg-gray-100">
         <div class="container mx-auto text-center">
             <h2 class="text-4xl text-center font-poppins font-bold mb-8">Menu</h2>
 
@@ -302,6 +305,34 @@
         </div>
     </section>
 
+    <section id="kritik" class="px-16 py-20 bg-gray-100">
+        <div class="container mx-auto flex flex-col gap-5 items-start justify-center font-poppins lg:w-1/2">
+            <h2 class="text-5xl font-bold text-center w-full">Kritik</h2>
+            <p class="text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum aut deserunt facilis
+                dolorem, consectetur nobis culpa sapiente sint eaque quae id consequatur odio repellendus explicabo
+                saepe suscipit maxime magnam inventore blanditiis provident harum amet. Minima distinctio obcaecati a
+                cumque consequatur.</p>
+            <form action="" class="w-full flex flex-col gap-3">
+                <div class="flex flex-col">
+                    <label for="puas">Apakah anda puas dengan makanannya?</label>
+                    <select name="" id="puas" class="w-full p-2 rounded-md">
+                        <option value="" disabled selected>Pilih</option>
+                        <option value="Tidak Puas">Puas</option>
+                        <option value="Puas">Puas</option>
+                        <option value="Sangat Puas">Sangat Puas</option>
+                    </select>
+                </div>
+                <div class="flex flex-col">
+                    <label for="saran">Berikan kritik & saran untuk mengembangkan website kami!</label>
+                    <textarea name="" id="saran" placeholder="Kritik & Saran" class="w-full p-2 rounded-md"></textarea>
+                </div>
+                <div class="flex flex-col">
+                    <button type="submit" class="p-2 rounded-md bg-red-600 text-white">Kirim</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
     <footer class="py-8 bg-gray-950 text-white">
         <div class="container mx-auto px-8 flex flex-wrap">
             <!-- Kolom Pertama -->
@@ -338,6 +369,37 @@
 
     <!-- Tailwind Config -->
     <script src="js/tailwind.config.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const sections = document.querySelectorAll("section");
+            const navDivs = document.querySelectorAll("nav div div");
+            const navLinks = document.querySelectorAll("nav div div a");
+
+            window.addEventListener("scroll", handleNavbar);
+
+            function handleNavbar() {
+                let current = "";
+
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if (pageYOffset >= sectionTop - 50) {
+                        current = section.getAttribute("id");
+                    }
+                });
+
+                navDivs.forEach(div => {
+                    div.classList.remove("brightness-90");
+                });
+
+                navLinks.forEach(link => {
+                    if (link.getAttribute("href").includes(current)) {
+                        link.parentElement.classList.add("brightness-90");
+                    }
+                });
+            }
+        });
+    </script>
 
 </body>
 
