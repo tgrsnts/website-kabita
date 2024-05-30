@@ -20,9 +20,9 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="bg-white lg:p-4 flex items-center fixed top-0 w-full z-10 h-16">
+    <nav class="bg-red-600 lg:p-4 flex items-center fixed top-0 w-full z-10 h-16">
         <a href="index.html" class="flex grow items-center ml-8 lg:ml-10 cursor-pointer">
-            <span class="text-red-600 text-2xl font-poppins font-bold">Kabita</span>
+            <span class="text-white text-2xl font-poppins font-bold">Kabita</span>
         </a>
         <div class="block lg:hidden">
             <button onclick="toggleMenu()" class="flex items-center rounded text-black-500 hover:text-black-400">
@@ -31,21 +31,18 @@
             </button>
         </div>
         <div id="navbar" class="block items-center justify-between h-16 lg:flex lg:items-center lg:w-auto hidden">
-            <div class="bg-white cursor-pointer h-full flex items-center">
+            <div class="bg-red-600 cursor-pointer h-full flex items-center">
                 <a href="#menu"
-                    class="text-red-600 px-4 py-3 font-poppins border-b-2 border-white hover:border-red-600">Menu</a>
+                    class="text-white px-4 py-3 font-semibold font-poppins border-b-2 border-red-600 hover:border-white">Menu</a>
             </div>
-            <div class="bg-white cursor-pointer h-full flex items-center">
+            <div class="bg-red-600 cursor-pointer h-full flex items-center">
                 <a href="#kontak"
-                    class="text-red-600 px-4 py-3 font-poppins border-b-2 border-white hover:border-red-600">Kontak</a>
+                    class="text-white px-4 py-3 font-semibold font-poppins border-b-2 border-red-600 hover:border-white">Kontak</a>
             </div>
-            <div class="bg-white cursor-pointer h-full flex items-center">
-                <a href="#lokasi"
-                    class="text-red-600 px-4 py-3 font-poppins border-b-2 border-white hover:border-red-600">Lokasi</a>
-            </div>
-            <div class="bg-white cursor-pointer h-full flex items-center">
+
+            <div class="bg-red-600 cursor-pointer h-full flex items-center">
                 <a href="#kritik"
-                    class="text-red-600 px-4 py-3 font-poppins border-b-2 border-white hover:border-red-600">Kritik &
+                    class="text-white px-4 py-3 font-semibold font-poppins border-b-2 border-red-600 hover:border-white">Kritik &
                     Saran</a>
             </div>
         </div>
@@ -82,7 +79,7 @@
                     pengunjung-pengunjung yang menginginkan makan enak dengan harga yang terjangkau. Kedai warung kabita
                     sendiri sudah ter-standarisasi dengan sertifikat halal oleh sebab itu para konsumen tidak perlu
                     mengkhawatirkan masalah halal, bersih, dan kenyamanan.
-    
+
                     Kedai warung kabita sendiri sudah berdiri dari tahun 1998, sehingga sudah tidak heran jika anak IPB
                     tahu kedai warung ini. Sebab dari angkatan per angkatan, mereka sudah memasarkan kedai warung ini.
                     Warung Kedai Kabita sudah banyak mengalami perpindahan lahan, hingga terakhir bertetap di Jl. Lodaya
@@ -93,7 +90,7 @@
     </section>
 
     <!-- Best Seller -->
-    <section id="best-seller" class="px-8 lg:px-36 py-20 bg-red-100">
+    <section id="best-seller" class="px-8 lg:px-36 py-20 bg-gray-100">
         <div class="container mx-auto text-center">
             <h2 class="text-xl lg:text-5xl text-center font-poppins font-bold mb-8">Best Seller</h2>
 
@@ -162,23 +159,22 @@
     </section>
 
     <!-- Menu -->
-    <section id="menu" class="px-8 lg:px-36 py-20 bg-gray-100">
+    <section id="menu" class="px-8 lg:px-36 py-20 bg-red-600">
         <div class="container mx-auto text-center">
-            <h2 class="text-xl lg:text-5xl text-center font-poppins font-bold mb-8">Menu</h2>
+            <h2 class="text-xl lg:text-5xl text-center font-poppins font-bold mb-8 text-white">Menu</h2>
 
-            <!-- Accordion Horizontal
-
-            <div class="flex justify-center">
+            <!-- Accordion Horizontal -->
+            <div class="flex justify-center text-white font-poppins">
                 <div class="w-32 h-16  mx-2 flex items-center justify-center">
-                    <p class="text-red-500 border-b border-b-4 w-full py-2 border-red-500 cursor-pointer">All</p>
+                    <p class="border-b-4 border-white w-full py-2 cursor-pointer">All</p>
                 </div>
                 <div class="w-32 h-16  mx-2 flex items-center justify-center cursor-pointer">
-                    <p class="border-b border-b-4 w-full py-2">Buah Tropis</p>
+                    <p class="border-b-4 border-red-600 w-full py-2">Makanan</p>
                 </div>
                 <div class="w-32 h-16  mx-2 flex items-center justify-center cursor-pointer">
-                    <p class="border-b border-b-4 w-full py-2">Buah Sub-Tropis</p>
+                    <p class="border-b-4 border-red-600 w-full py-2">Minuman</p>
                 </div>
-            </div> -->
+            </div>
 
             <!-- Card -->
             <div class="grid grid-cols-2 lg:flex lg:flex-wrap lg:justify-center gap-5">
@@ -248,45 +244,75 @@
                     <!-- <div class="font-poppins text-gray-700 mb-2">Rp 10.000 / kg</div>
                         <div class="font-poppins text-gray-500">1kg</div> -->
                 </a>
+                <a href="detail.html"
+                    class="w-full lg:w-60 bg-white rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105">
+                    <img src="image/ayam-goreng.jpg" alt="Ayam Goreng" class="w-full object-cover mb-4 rounded-lg">
+                    <h3 class="text-sm lg:text-lg font-poppins font-semibold mb-2">Ayam Goreng</h3>
+                    <div class="flex items-center justify-center mb-2">
+                        <div class="text-yellow-500 mr-1">&#9733;</div>
+                        <div class="font-poppins text-gray-600">4.5</div>
+                    </div>
+                    <!-- <div class="font-poppins text-gray-700 mb-2">Rp 10.000 / kg</div>
+                        <div class="font-poppins text-gray-500">1kg</div> -->
+                </a>
+                <a href="detail.html"
+                    class="w-full lg:w-60 bg-white rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105">
+                    <img src="image/ayam-goreng.jpg" alt="Ayam Goreng" class="w-full object-cover mb-4 rounded-lg">
+                    <h3 class="text-sm lg:text-lg font-poppins font-semibold mb-2">Ayam Goreng</h3>
+                    <div class="flex items-center justify-center mb-2">
+                        <div class="text-yellow-500 mr-1">&#9733;</div>
+                        <div class="font-poppins text-gray-600">4.5</div>
+                    </div>
+                    <!-- <div class="font-poppins text-gray-700 mb-2">Rp 10.000 / kg</div>
+                        <div class="font-poppins text-gray-500">1kg</div> -->
+                </a>  
             </div>
         </div>
     </section>
 
-    <section id="kontak" class="px-16 py-20 bg-red-100">
+    <section id="kontak" class="px-16 py-20 bg-gray-100">
         <div class="container mx-auto flex flex-col gap-5 items-start justify-center font-poppins lg:w-1/2">
             <h2 class="text-xl lg:text-5xl font-bold text-center w-full">Kontak</h2>
-            <form action="" class="w-full flex flex-col gap-3">
-                <div class="flex flex-col">
-                    <label for="puas">Apakah anda puas dengan makanannya?</label>
-                    <select name="" id="puas" class="w-full p-2 rounded-md">
-                        <option value="" disabled selected>Pilih</option>
-                        <option value="Tidak Puas">Puas</option>
-                        <option value="Puas">Puas</option>
-                        <option value="Sangat Puas">Sangat Puas</option>
-                    </select>
+            <div class="w-full flex flex-col gap-3">
+                <div class="grid-rows-3 flex justify-center items-center my-20 gap-16 font-poppins">
+                    <a href="https://mail.google.com/mail/u/0/?fs=1&to=Aryoelnino@gmail.com&su=SUBJECT&body=BODY&tf=cm"
+                        class="Contact h-52 w-72 rounded-2xl flex items-center justify-center bg-red-600 w-80 transition-transform duration-300 transform hover:scale-105 flex-shrink-0 overflow-hidden cursor-pointer">
+                        <div class="text-center mt-5">
+                            <i class="fa-solid fa-envelope fa-2xl" style="color: white;"></i>
+                            <div class="text-white mt-10">tegarsantoso72@gmail.com</div>
+                        </div>
+                    </a>
+                    <a href="https://wa.me/+6289670522489"
+                        class="Contact h-52 w-72 rounded-2xl flex items-center justify-center bg-red-600 w-80 transition-transform duration-300 transform hover:scale-105 flex-shrink-0 overflow-hidden cursor-pointer">
+                        <div class="text-center mt-5">
+                            <i class="fa-brands fa-whatsapp fa-2xl" style="color: #ffffff;"></i>
+                            <div class="text-white mt-10">+62 896 7052 2489</div>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/kabita/"
+                        class="Contact h-52 w-72 rounded-2xl flex items-center justify-center bg-red-600 w-80 transition-transform duration-300 transform hover:scale-105 flex-shrink-0 overflow-hidden cursor-pointer">
+                        <div class="text-center mt-5">
+                            <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+                            <div class="text-white mt-10">@kabita</div>
+                        </div>
+                    </a>
                 </div>
-                <div class="flex flex-col">
-                    <label for="saran">Berikan kritik & saran untuk mengembangkan website kami!</label>
-                    <textarea name="" id="saran" placeholder="Kritik & Saran" class="w-full p-2 rounded-md"></textarea>
+                <div class="bg-gray-900 rounded-2xl drop-shadow-2xl flex flex-col justify-center px-8 py-20 w-full">
+                    <h2 class="text-2xl lg:text-2xl font-bold text-center text-white mb-8">Datang ke Waroeng Kabita dan rasakan kenikmatan makanan kami!</h2>
+                    <!-- <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.1538174015263!2d106.82062307499388!3d-6.6278089933664965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c8aa04358657%3A0x791475378c5183f5!2sJl.%20Raya%20Tajur%20No.65C%2C%20RT.01%2FRW.03%2C%20Tajur%2C%20Kec.%20Bogor%20Tim.%2C%20Kota%20Bogor%2C%20Jawa%20Barat%2016134!5e0!3m2!1sid!2sid!4v1716820995104!5m2!1sid!2sid"
+                        width="900" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" class="map rounded-2xl mt-8"></iframe> -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d990.8655974168457!2d106.808518!3d-6.589305!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c57776d4956d%3A0x7d23c109e11fa013!2sWarung%20Makan%20Kabita!5e0!3m2!1sid!2sid!4v1716653576602!5m2!1sid!2sid"
+                        class="w-full h-96" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="flex flex-col">
-                    <button type="submit" class="p-2 rounded-md bg-red-600 text-white">Kirim</button>
-                </div>
-            </form>
+            </div>
         </div>
     </section>
 
-    <section id="lokasi" class="px-16 py-20 bg-gray-100">
-        <div class="container mx-auto flex flex-col gap-5 items-start justify-center font-poppins lg:w-1/2">
-            <h2 class="text-xl lg:text-5xl font-bold text-center w-full">Lokasi</h2>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d990.8655974168457!2d106.808518!3d-6.589305!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c57776d4956d%3A0x7d23c109e11fa013!2sWarung%20Makan%20Kabita!5e0!3m2!1sid!2sid!4v1716653576602!5m2!1sid!2sid"
-                class="w-full h-96" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </section>
-
-    <section id="kritik" class="px-16 pt-20 pb-40 bg-red-100">
+    <section id="kritik" class="px-16 pt-20 pb-40 bg-gray-100">
         <div class="container mx-auto flex flex-col gap-5 items-start justify-center font-poppins lg:w-1/2">
             <h2 class="text-xl lg:text-5xl font-bold text-center w-full">Kritik & Saran</h2>
             <!-- <p class="text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum aut deserunt facilis
@@ -314,7 +340,7 @@
         </div>
     </section>
 
-    <footer class="py-8 bg-gray-950 text-white">
+    <footer class="py-8 bg-red-600 text-white">
         <div class="container mx-auto px-8 flex flex-wrap">
             <!-- Kolom Pertama -->
             <div class="w-full lg:w-1/2 lg:pr-4">
@@ -396,9 +422,9 @@
                 });
 
                 navLinks.forEach(link => {
-                    link.classList.remove("border-red-600");
+                    link.classList.remove("border-white");
                     if (link.getAttribute("href").includes(current)) {
-                        link.classList.add("border-red-600");
+                        link.classList.add("border-white");
                     }
                 });
             }
