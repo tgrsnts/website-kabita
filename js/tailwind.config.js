@@ -7,8 +7,8 @@ tailwind.config = {
             colors: {
                 'first': '#B70404',
                 'second': '#E4C59E',
-                'primary': '#803D3B',
-                'secondary' : '#322C2B'
+                'primary': '#B80000',
+                'secondary' : '#820300'
             }
         }
     },
