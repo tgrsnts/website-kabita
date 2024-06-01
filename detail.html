@@ -106,14 +106,14 @@
                             Atur jumlah
                         </div>
                         <div class="flex items-center justify-between">
-                            <div class="flex items-center justify-center border-2 border-first rounded-lg">
-                                <button class="text-first px-3 py-2 hover:text-white hover:bg-first w-full">
+                            <div class="flex items-center justify-center">
+                                <button class="text-first px-3 py-2 border-2 border-first rounded-l-lg hover:text-white hover:bg-first w-full">
                                     <i class="fa-solid fa-minus"></i>
                                 </button>
-                                <div class="px-4">
+                                <div class="px-4 py-2 border-y-2 border-first">
                                     <p class="text-center">10</p>
                                 </div>
-                                <button class="text-first px-3 py-2 hover:text-white hover:bg-first w-full">
+                                <button class="text-first px-3 py-2 border-2 border-first rounded-r-lg hover:text-white hover:bg-first w-full">
                                     <i class="fa-solid fa-plus"></i>
                                 </button>
                             </div>
@@ -135,14 +135,14 @@
                                     Atur jumlah
                                 </div>
                                 <div class="flex items-center justify-between">
-                                    <div class="flex items-center justify-center border-2 border-first rounded-lg">
-                                        <button class="text-first px-3 py-2 hover:text-white hover:bg-first w-full">
+                                    <div class="flex items-center justify-center">
+                                        <button class="text-first px-3 py-2 border-2 border-first rounded-l-lg hover:text-white hover:bg-first w-full">
                                             <i class="fa-solid fa-minus"></i>
                                         </button>
-                                        <div class="px-4">
+                                        <div class="px-4 py-2 border-y-2 border-first">
                                             <p class="text-center">10</p>
                                         </div>
-                                        <button class="text-first px-3 py-2 hover:text-white hover:bg-first w-full">
+                                        <button class="text-first px-3 py-2 border-2 border-first rounded-r-lg hover:text-white hover:bg-first w-full">
                                             <i class="fa-solid fa-plus"></i>
                                         </button>
                                     </div>
@@ -151,28 +151,41 @@
                                 <div class="flex items-center justify-between ">
                                     <p class="font-semibold">Subtotal</p>
                                     <p class="text-xl font-bold">Rp. 100.000</p>
-                                </div>
+                                </div>                    
+                            </div>
+                            <div class="relative h-8">
+
+                            </div>
+                            <div class="absolute bottom-0 left-0 p-2 w-full flex flex-row lg:flex-col gap-2 items-center justify-center">
+                                <button href=""
+                                    class="bg-first font-poppins font-semibold rounded-lg px-4 py-2 text-white text-center w-full hover:bg-secondary">
+                                    + Keranjang
+                                </button>
+                                <button href=""
+                                    class="bg-white font-poppins font-semibold rounded-lg px-4 py-2 border-2 border-first text-center w-full hover:bg-first hover:text-white hover:border-white">
+                                    Beli
+                                </button>
                             </div>
                         </div>
                     </dialog>
                     <div class="pt-2">
-                        <div class="lg:hidden fixed bottom-0 lg:static w-full bg-white lg:bg-transparent p-2 flex flex-row lg:flex-col gap-3 items-center justify-center">
+                        <div class="lg:hidden fixed bottom-0 lg:static w-full bg-white lg:bg-transparent p-2 flex flex-row lg:flex-col gap-2 items-center justify-center">
                             <button href="" onclick="my_modal.showModal()"
-                                class="bg-first font-poppins font-semibold rounded-lg px-4 py-2 text-white text-center w-full hover:bg-secondary">
+                                class="bg-first font-poppins font-semibold rounded-lg px-4 py-2 border-2 border-first text-white text-center w-full hover:bg-secondary">
                                 + Keranjang
                             </button>
                             <button href="" onclick="my_modal.showModal()"
-                                class="bg-white font-poppins font-semibold rounded-lg px-4 py-2 border-2 border-first text-center w-full hover:bg-first hover:text-white hover:border-white">
+                                class="bg-white font-poppins font-semibold rounded-lg px-4 py-2 border-2 border-first text-first text-center w-full hover:bg-first hover:text-white hover:border-white">
                                 Beli
                             </button>
                         </div>
                         <div class="hidden lg:flex px-2 flex-row lg:flex-col gap-3 items-center justify-center">
-                            <button href="" onclick="my_modal.showModal()"
-                                class="bg-first font-poppins font-semibold rounded-lg px-4 py-2 text-white text-center w-full hover:bg-secondary">
+                            <button href=""
+                                class="bg-first font-poppins font-semibold rounded-lg px-4 py-2 border-2 border-first text-white text-center w-full hover:bg-secondary">
                                 + Keranjang
                             </button>
-                            <button href="" onclick="my_modal.showModal()"
-                                class="bg-white font-poppins font-semibold rounded-lg px-4 py-2 border-2 border-first text-center w-full hover:bg-first hover:text-white hover:border-white">
+                            <button href=""
+                                class="bg-white font-poppins font-semibold rounded-lg px-4 py-2 border-2 border-first text-first text-center w-full hover:bg-first hover:text-white hover:border-white">
                                 Beli
                             </button>
                         </div>
