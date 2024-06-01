@@ -258,18 +258,18 @@
                 <div class="flex justify-center font-poppins mb-4">
                     <div class="w-32 h-16  mx-2 flex items-center justify-center cursor-pointer">
                         <p
-                            class="w-full py-2 border-b-4 border-first hover:text-first hover:border-first focus:text-first focus:border-first text-first">
+                            class="w-full py-2 border-b-4 border-first hover:text-first hover:border-first focus:text-first focus:outline-none focus:ring focus:ring-first focus-border-first text-first">
                             All</p>
                     </div>
                     <div class="w-32 h-16  mx-2 flex items-center justify-center cursor-pointer">
                         <p
-                            class="w-full py-2 border-b-4 border-gray-100  hover:text-first hover:border-first focus:text-first focus:border-first ">
+                            class="w-full py-2 border-b-4 border-gray-100  hover:text-first hover:border-first focus:text-first focus:outline-none focus:ring focus:ring-first focus-border-first ">
                             Makanan
                         </p>
                     </div>
                     <div class="w-32 h-16  mx-2 flex items-center justify-center cursor-pointer">
                         <p
-                            class="w-full py-2 border-b-4 border-gray-100  hover:text-first hover:border-first focus:text-first focus:border-first ">
+                            class="w-full py-2 border-b-4 border-gray-100  hover:text-first hover:border-first focus:text-first focus:outline-none focus:ring focus:ring-first focus-border-first ">
                             Minuman
                         </p>
                     </div>
@@ -410,12 +410,12 @@
                         <div class="flex flex-col">
                             <label for="nama">Nama</label>
                             <input type="text" id="nama" placeholder="Masukan nama anda"
-                                class="w-full p-2 rounded-md bg-gray-100">
+                                class="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-first focus-border-first">
                         </div>
                         <div class="flex flex-col">
                             <label for="telepon">No. Telepon</label>
                             <input type="text" id="telepon" placeholder="Masukan nomor telepon anda"
-                                class="w-full p-2 rounded-md bg-gray-100">
+                                class="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-first focus-border-first">
                             <script>
                                 function formatAngka(angka) {
                                     var number_string = angka.replace(/[^,\d]/g, '').toString(); //Menghapus huruf                            
@@ -431,16 +431,16 @@
                         <div class="flex flex-col">
                             <label for="email">Email</label>
                             <input type="email" id="email" placeholder="Masukan email anda"
-                                class="w-full p-2 rounded-md bg-gray-100">
+                                class="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-first focus-border-first">
                         </div>
                         <div class="flex flex-col">
                             <label for="subjek">Subjek</label>
-                            <input type="text" id="subjek" placeholder="Subjek" class="w-full p-2 rounded-md bg-gray-100">
+                            <input type="text" id="subjek" placeholder="Subjek" class="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-first focus-border-first">
                         </div>
                         <div class="flex flex-col">
                             <label for="pesan">Pesan</label>
                             <textarea name="" id="pesan" placeholder="Pesan anda"
-                                class="w-full p-2 rounded-md bg-gray-100"></textarea>
+                                class="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-first focus-border-first"></textarea>
                         </div>
                         <div class="flex flex-col mt-4 lg:mt-auto">
                             <button type="submit"
@@ -459,7 +459,7 @@
                 <form action="" class="w-full flex flex-col gap-5 px-8 lg:px-8 pb-10 lg:pb-16">
                     <div class="flex flex-col">
                         <label for="puas">Apakah anda puas dengan makanannya?</label>
-                        <select name="" id="puas" class="w-full p-2 rounded-md bg-gray-100">
+                        <select name="" id="puas" class="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-first focus-border-first">
                             <option value="" disabled selected>Pilih</option>
                             <option value="Tidak Puas">Tidak Puas</option>
                             <option value="Puas">Puas</option>
@@ -469,7 +469,7 @@
                     <div class="flex flex-col">
                         <label for="saran">Berikan kritik & saran untuk mengembangkan website kami!</label>
                         <textarea name="" id="saran" placeholder="Kritik & Saran"
-                            class="w-full p-2 rounded-md bg-gray-100"></textarea>
+                            class="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-first focus-border-first"></textarea>
                     </div>
                     <div class="flex flex-col">
                         <button type="submit"
