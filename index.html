@@ -449,6 +449,64 @@
         <section id="kritik" class="px-8 pt-20 pb-40 bg-gray-100">
             <div class="flex flex-col gap-10 justify-center bg-white rounded-lg w-full lg:w-1/2 mx-auto font-poppins">
                 <div class="flex items-center bg-first rounded-t-lg h-40">
+                    <h2 class="text-xl lg:text-5xl font-bold text-center text-white w-full">Kontak</h2>
+                </div>
+                <div class="w-full flex flex-wrap px-8 lg:px-8 pb-10 lg:pb-16">
+                    <div class="flex flex-col w-full lg:w-1/2 transition duration-300 hover:drop-shadow-2xl">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d990.8655974168457!2d106.808518!3d-6.589305!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c57776d4956d%3A0x7d23c109e11fa013!2sWarung%20Makan%20Kabita!5e0!3m2!1sid!2sid!4v1716653576602!5m2!1sid!2sid"
+                            class="flex flex-col w-full lg:h-full rounded-lg" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <form action="" class="flex flex-col mt-8 lg:mt-0 w-full lg:w-1/2 lg:ps-4 gap-2 rounded-lg transition duration-300 font-poppins">
+                        <h2 class="text-xl lg:text-2xl font-bold text-center w-full">Hubungi Kami</h2>
+                        <div class="flex flex-col">
+                            <label for="nama">Nama</label>
+                            <input type="text" id="nama" placeholder="Masukan nama anda"
+                                class="w-full p-2 rounded-md bg-gray-100">
+                        </div>
+                        <div class="flex flex-col">
+                            <label for="telepon">No. Telepon</label>
+                            <input type="text" id="telepon" placeholder="Masukan nomor telepon anda"
+                                class="w-full p-2 rounded-md bg-gray-100">
+                            <script>
+                                function formatAngka(angka) {
+                                    var number_string = angka.replace(/[^,\d]/g, '').toString(); //Menghapus huruf                            
+                                    return number_string;
+                                }
+    
+                                const teleponInput = document.getElementById('telepon');
+                                teleponInput.addEventListener("keyup", function (e) {
+                                    e.target.value = formatAngka(e.target.value);
+                                });
+                            </script>
+                        </div>
+                        <div class="flex flex-col">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Masukan email anda"
+                                class="w-full p-2 rounded-md bg-gray-100">
+                        </div>
+                        <div class="flex flex-col">
+                            <label for="subjek">Subjek</label>
+                            <input type="text" id="subjek" placeholder="Subjek" class="w-full p-2 rounded-md bg-gray-100">
+                        </div>
+                        <div class="flex flex-col">
+                            <label for="pesan">Pesan</label>
+                            <textarea name="" id="pesan" placeholder="Pesan anda"
+                                class="w-full p-2 rounded-md bg-gray-100"></textarea>
+                        </div>
+                        <div class="flex flex-col mt-4 lg:mt-auto">
+                            <button type="submit"
+                                class="p-2 rounded-md bg-first text-white hover:bg-secondary">Kirim</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section> 
+        
+        <section id="kritik" class="px-8 pt-20 pb-40 bg-gray-100">
+            <div class="flex flex-col gap-10 justify-center bg-white rounded-lg w-full lg:w-1/2 mx-auto font-poppins">
+                <div class="flex items-center bg-first rounded-t-lg h-40">
                     <h2 class="text-xl lg:text-5xl font-bold text-center text-white w-full">Kritik & Saran</h2>
                 </div>
                 <form action="" class="w-full flex flex-col gap-5 px-8 lg:px-8 pb-10 lg:pb-16">
@@ -472,7 +530,7 @@
                     </div>
                 </form>
             </div>
-        </section>  
+        </section> 
     </main>
 
     <footer class="py-8 bg-[#820300] text-white">
