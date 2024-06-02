@@ -44,27 +44,174 @@
                     stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                 </svg> -->
-                <i class="fa-solid fa-bars text-white"></i>
+                <i class="fa-solid fa-bars h-6 w-6 text-white"></i>
             </label>
             <nav aria-label="Header Navigation"
                 class="peer-checked:mt-4 peer-checked:max-h-56 flex max-h-0 w-full flex-col items-center justify-between overflow-hidden transition-all md:ml-24 md:max-h-full md:flex-row md:items-start">
                 <ul
                     class="flex flex-col items-center space-y-2 md:ml-auto md:flex-row md:space-y-0 font-poppins font-semibold">
                     <li class="text-white border-b-2 border-first md:mr-12 hover:border-white">
-                        <a href="index.html#menu">Menu</a>
+                        <a href="#menu">Menu</a>
                     </li>
-                    <li class="text-white border-b-2 border-first md:mr-12 hover:border-white"><a
-                            href="index.html#kontak">Kontak</a></li>
-                    <li class="text-white border-b-2 border-first md:mr-12 hover:border-white"><a
-                            href="index.html#kritik">Kritik</a></li>
-                    <!-- <li class="text-white border-b-2 border-red-600 md:mr-12 hover:border-white">
-                        <button
-                            class="rounded-md border-2 border-blue-600 px-6 py-1 font-medium text-blue-600 transition-colors hover:bg-blue-600 hover:text-white">Login</button>
-                    </li> -->
+                    <li class="text-white border-b-2 border-first md:mr-12 hover:border-white">
+                        <a href="#kontak">Kontak</a>
+                    </li>
+                    <li class="text-white border-b-2 border-first md:mr-12 hover:border-white">
+                        <a href="#kritik">Kritik</a>
+                    </li>
+                    <button
+                        class="text-white border-2 border-first md:mr-12 px-4 py-2 border-white cursor-pointer hover:bg-secondary hover:border-first focus:bg-secondary focus:border-first"
+                        onclick="modal_login.showModal()">Login</button>
                 </ul>
             </nav>
         </div>
     </header>
+    <!-- Modal Login  -->
+    <dialog id="modal_login" class="modal backdrop-blur-lg">
+        <div class="modal-box font-poppins p-0 w-76 lg:w-96 flex flex-col">
+            <div class="flex items-center bg-first rounded-t-lg h-24 lg:h-40">
+                <h2 class="text-2xl lg:text-5xl font-bold text-center text-white w-full">Login</h2>
+            </div>
+            <div class="px-8 pt-4 pb-12">
+                <form id="loginForm" action="" class="flex flex-col gap-2">
+                    <div class="flex flex-col">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" placeholder="Masukkan username"
+                            class="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-first focus-border-first">
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="password">Password</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 right-0 flex items-center px-2">
+                                <input class="hidden js-password-toggle" id="toggle" type="checkbox" />
+                                <label
+                                    class="bg-gray-300 hover:bg-gray-400 rounded px-2 py-1 text-sm text-gray-600 font-mono cursor-pointer js-password-label"
+                                    for="toggle"><i class="fa-solid fa-eye"></i></label>
+                            </div>
+                            <input type="password" id="password" placeholder="Masukkan password"
+                                class="js-password w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-first focus-border-first">
+                        </div>
+                        <a href="" class="mt-1 text-sm text-first hover:text-secondary">Lupa password?</a>
+                        <div class="flex flex-col mt-2">
+                            <button type="submit"
+                                class="p-2 rounded-md bg-first text-white hover:bg-secondary">Login</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="divider"></div>
+                <div class="text-center">
+                    Belum punya akun? <form method="dialog" class="inline">
+                        <button class="text-first hover:text-secondary"
+                            onclick="modal_register.showModal()">Daftar!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+        </form>
+    </dialog>
+
+    <!-- Modal Register  -->
+    <dialog id="modal_register" class="modal backdrop-blur-lg">
+        <div class="modal-box font-poppins p-0 w-76 lg:w-96 flex flex-col">
+            <div class="flex items-center bg-first rounded-t-lg h-24 lg:h-40">
+                <h2 class="text-2xl lg:text-5xl font-bold text-center text-white w-full">Daftar</h2>
+            </div>
+            <div class="px-8 pt-4 pb-12">
+                <form id="loginForm" action="" class="flex flex-col gap-2">
+                    <div class="flex flex-col">
+                        <label for="nama">Nama</label>
+                        <input type="text" id="nama" placeholder="Masukkan nama"
+                            class="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-first focus-border-first">
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" placeholder="Masukkan username"
+                            class="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-first focus-border-first">
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="password">Password</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 right-0 flex items-center px-2">
+                                <input class="hidden js-password-toggle" id="toggle" type="checkbox" />
+                                <label
+                                    class="bg-gray-300 hover:bg-gray-400 rounded px-2 py-1 text-sm text-gray-600 font-mono cursor-pointer js-password-label"
+                                    for="toggle"><i class="fa-solid fa-eye"></i></label>
+                            </div>
+                            <input type="password" id="password" placeholder="Masukkan password"
+                                class="js-password w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-first focus-border-first">
+                        </div>
+                        <div class="flex flex-col mt-4">
+                            <button type="submit"
+                                class="p-2 rounded-md bg-first text-white hover:bg-secondary">Daftar</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="divider"></div>
+                <div class="text-center">
+                    Sudah punya akun? <form method="dialog" class="inline">
+                        <button class="text-first hover:text-secondary"
+                            onclick="modal_login.showModal()">Login!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+        </form>
+    </dialog>
+
+    <!-- <dialog id="modal_login" class="modal">
+        <div class="modal-box font-poppins px-8 py-12 w-96 flex flex-col gap-3">
+            <h3 class="font-bold text-lg md:text-2xl lg:text-3xl text-center">Login</h3>
+            <form action="" class="flex flex-col gap-3">
+                <div class="flex flex-col">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Masukkan username"
+                        class="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-first focus-border-first">
+                </div>
+                <div class="flex flex-col">
+                    <label for="password">Password</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 right-0 flex items-center px-2">
+                            <input class="hidden js-password-toggle" id="toggle" type="checkbox" />
+                            <label
+                                class="bg-gray-300 hover:bg-gray-400 rounded px-2 py-1 text-sm text-gray-600 font-mono cursor-pointer js-password-label"
+                                for="toggle"><i class="fa-solid fa-eye"></i></label>
+                        </div>
+                        <input type="password" id="password" placeholder="Masukkan password"
+                            class="js-password w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-first focus-border-first">                    
+                    </div>
+                    <a href="" class="text-sm text-first hover:text-secondary">Lupa password?</a>
+                    <script>
+                        const passwordToggle = document.querySelector('.js-password-toggle')
+                        passwordToggle.addEventListener('change', function () {
+                            const password = document.querySelector('.js-password'),
+                                passwordLabel = document.querySelector('.js-password-label')
+
+                            if (password.type === 'password') {
+                                password.type = 'text'
+                                passwordLabel.innerHTML = '<i class="fa-solid fa-eye-slash"></i>'
+                            } else {
+                                password.type = 'password'
+                                passwordLabel.innerHTML = '<i class="fa-solid fa-eye"></i>'
+                            }
+
+                            password.focus()
+                        })
+                    </script>
+                </div>
+                <div class="flex flex-col">
+                    <button type="submit" class="p-2 rounded-md bg-first text-white hover:bg-secondary">Login</button>
+                </div>
+            </form>
+        </div>
+        <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+        </form>
+    </dialog> -->
+
 
     <main>
         <section id="detail" class="py-16 lg:px-36 bg-gray-100 mt-16 mx-auto">
