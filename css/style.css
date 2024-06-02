@@ -6,7 +6,3 @@ html {
   /* IE and Edge */
   scrollbar-width: none;/
 }
-
-html::-webkit-scrollbar {
-  display: none;
-}
