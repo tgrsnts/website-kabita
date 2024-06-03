@@ -15,18 +15,20 @@ function toggleMenu() {
 }
 
 // Untuk Hidden Password atau View Password
-const passwordToggle = document.querySelector('.js-password-toggle')
-        passwordToggle.addEventListener('change', function () {
-            const password = document.querySelector('.js-password'),
-                passwordLabel = document.querySelector('.js-password-label')
+document.querySelectorAll('.js-password-toggle').forEach(passwordToggle => {
+    passwordToggle.addEventListener('change', function () {
+        const parent = this.closest('.relative');
+        const password = parent.querySelector('.js-password');
+        const passwordLabel = parent.querySelector('.js-password-label');
 
-            if (password.type === 'password') {
-                password.type = 'text'
-                passwordLabel.innerHTML = '<i class="fa-solid fa-eye-slash"></i>'
-            } else {
-                password.type = 'password'
-                passwordLabel.innerHTML = '<i class="fa-solid fa-eye"></i>'
-            }
+        if (password.type === 'password') {
+            password.type = 'text';
+            passwordLabel.innerHTML = '<i class="fa-solid fa-eye-slash"></i>';
+        } else {
+            password.type = 'password';
+            passwordLabel.innerHTML = '<i class="fa-solid fa-eye"></i>';
+        }
 
-            password.focus()
-        })
+        password.focus();
+    });
+});
